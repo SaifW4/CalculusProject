@@ -3,7 +3,7 @@ import numpy as np
 
 
 
-def example_graph():
+def example_graph_1():
     x_axis =[-1,0,1,2,3,4,5,6]
     y_axis =[1,0,2,2,2,1,0.5,0]
     plt.title("This is an example graph")
@@ -12,6 +12,14 @@ def example_graph():
     plt.plot(x_axis,y_axis, color= "blue")
     plt.show()
 
+def example_graph_2():
+    x_axis =[0,1,2,2,3,5,6]
+    y_axis =[0,1,1,2,3,0,0]
+    plt.title("This is an example graph")
+    plt.xlabel("x-axis")
+    plt.ylabel("y-axis")
+    plt.plot(x_axis,y_axis, color= "blue")
+    plt.show()
 
 
 #def quiz_graph():
@@ -40,7 +48,7 @@ def main():
 
         if user_input == 'y':
             print("Q1: Find the limit at x = 1")
-            example_graph()
+            example_graph_1()
             print("If you take x = 1 from the right (1.0000000001) and from the left (0.9999999999), you will find that")
             print("as x approaches x = 1 from the right, y is equal to 2 and as x approaches x = 1 from the left, y is also equal to 2 ")
             print("Therefore the limit is equal to 2.")
@@ -55,6 +63,16 @@ def main():
     while user_input != 'n':
        if user_input == 'n':
             break
+       elif user_input == 'y':
+           print("Q2: Find the limit at x = 2")
+           example_graph_2()
+           print("If you take x = 2 from the right (2.0000000001) and from the left (1.9999999999), you will find that")
+           print(
+               "as x approaches x = 2 from the right, y is equal to 2 and as x approaches x = 2 from the left, y is also equal to 2 ")
+           print("Therefore the limit is equal to 2.")
+           break
+       else:
+           print("Invalid input")
 
 main()
 
