@@ -23,7 +23,7 @@ def main():
     print("Knowing how to find limits is quite important in calculus as you can find"
           " where a function is going at a certain point even if the function isn't defined at that point!")
     print("This program will help you understand how to find limits and their continuity by explaining the concept, testing you and providing examples")
-    user_input = input("Do you wish to proceed? (By pressing y, you will be taught the concept of limits and continuity and how to find them. Pressing n will stop the program)")
+    user_input = input("Do you wish to proceed? (By pressing y, you will be taught the concept of limits and continuity and how to find them. Pressing n will take you to the next step)")
     while user_input != 'n':
         if user_input == 'y':
             print("")
@@ -35,7 +35,7 @@ def main():
         else:
             print("Invalid input")
 
-    user_input = input("Do you wish to proceed? (This will show you an example. Press y to proceed and n to stop the program)")
+    user_input = input("Do you wish to proceed? (By pressing y you will be shown an example. Pressing n will take you to the next step)")
     while user_input != 'n':
 
         if user_input == 'y':
@@ -45,13 +45,16 @@ def main():
             print("as x approaches x = 1 from the right, y is equal to 2 and as x approaches x = 1 from the left, y is also equal to 2 ")
             print("Therefore the limit is equal to 2.")
             break
+        elif user_input == 'n':
+            break
 
 
         else:
             print("Invalid input")
-    user_input = input("Do you wish to proceed? (This will show you another example example. Press y to proceed and n to stop the program)")
-
-
+    user_input = input("Do you wish to proceed? (Press y to see another example. Pressing n will take you to the next step)")
+    while user_input != 'n':
+       if user_input == 'n':
+            break
 
 main()
 
