@@ -87,6 +87,7 @@ def main():
            print("Invalid input")
     print(" - - - - - - - - - - - - - - - - - - - - - - - - - -")
     print("The answer structure should be as follows: 'Limit answer (Number)', 'Continuity answer (either Yes or No)'")
+    print("Please save the graph figure in order to have it always displayed next to the questions.")
     user_input = input("Are you ready to start the quiz? (y if yes and n if no)")
     for i in range(1,6):
         time.sleep(1)
@@ -99,6 +100,7 @@ def main():
             print("Answer the following questions based on the following graph. You only have one try. Write DNE if the limit does not exist and/or the continuity does not exist")
             quiz_graph()
             user_answer = input("Q1: What is the limit at x = 1.5 and is there continuity at this point?")
+
             while user_answer != 432:
                 if user_answer == "1, Yes":
                     print("Correct!")
@@ -109,6 +111,7 @@ def main():
             quiz_graph()
             user_answer = input(
                 "Q2: What is the limit at x = 3 and is there continuity at this point?")
+
             while user_answer != 432:
                 if user_answer == "DNE, DNE":
                     print("Correct!")
@@ -131,6 +134,7 @@ def main():
             quiz_graph()
             user_answer = input(
                 "Q4: What is the limit at x = 5 and is there continuity at this point?")
+
             while user_answer != 432:
                 if user_answer == 1:
                     print("Correct!")
@@ -144,8 +148,9 @@ def main():
             print("RSC = RIGHT-SIDE CONTINUITY")
             user_answer = input(
                 "Q5: What is the limit at x = 7 and is there continuity at this point? If not, is there a one-side continuity? If there is, what is it?")
+
             while user_answer != 432:
-                if user_answer == 'DNE, no, LSC':
+                if user_answer == 'DNE, No, LSC':
                     print("Correct!")
                     break
                 else:
