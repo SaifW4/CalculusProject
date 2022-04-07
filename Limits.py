@@ -20,6 +20,7 @@ def limits_cont_teach():
     print("Then it is called a one-side continuity and its named depending on which side is equal to f(x)")
     print("Right-side continuity if f(x) = Lim(f(x)) x->a^+")
     print("Left-side continuity if f(x) = Lim(f(x)) x->a^-")
+    print(" ------ ------ ------ ------")
 
 
 def example_graph_1():
@@ -85,7 +86,7 @@ def main():
         user_input = input(
             "Do you wish to proceed? (By pressing y you will be shown an example. Pressing n will take you to the next step)")
     print(" - - - - - - - - - - - - - - - - - - - - - - - - - -")
-    user_input = input("Do you wish to proceed? (Press y to see another example. Pressing anything else will take you to the next step)")
+    user_input = input("Do you wish to proceed? (Press y to see another example. Pressing n will take you to the next step)")
     while user_input != 'n':
        if user_input == 'y':
            print("Q2: Find the limit at x = 2")
@@ -102,7 +103,7 @@ def main():
        else:
            print("Invalid input")
        user_input = input(
-           "Do you wish to proceed? (Press y to see another example. Pressing anything else will take you to the next step)")
+           "Do you wish to proceed? (Press y to see another example. Pressing n will take you to the next step)")
     print(" - - - - - - - - - - - - - - - - - - - - - - - - - -")
     print("The answer structure should be as follows: 'Limit answer (Number)', 'Continuity answer (either Yes or No)'")
     print("Please save the graph figure in order to have it always displayed next to the questions.")
