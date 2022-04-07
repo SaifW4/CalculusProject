@@ -7,7 +7,7 @@ import time
 def example_graph_1():
     x_axis =[-1,0,1,2,3,4,5,6]
     y_axis =[1,0,2,2,2,1,0.5,0]
-    plt.title("This is an example graph")
+    plt.title("Example graph")
     plt.xlabel("x-axis")
     plt.ylabel("y-axis")
     plt.plot(x_axis,y_axis, color= "blue")
@@ -16,7 +16,7 @@ def example_graph_1():
 def example_graph_2():
     x_axis =[0,1,2,2,3,5,6]
     y_axis =[0,1,1,2,3,0,0]
-    plt.title("This is an example graph")
+    plt.title("Example graph")
     plt.xlabel("x-axis")
     plt.ylabel("y-axis")
     plt.plot(x_axis,y_axis, color= "blue")
@@ -81,26 +81,32 @@ def main():
                "as x approaches x = 2 from the right, y is equal to 2 and as x approaches x = 2 from the left, y is equal to 1 ")
            print("Therefore the limit does not exist.")
            print("Since the limit does not exist, there is no continuity at this point.")
+           print("Note that even though the function is not continuous at x = 2, it still has a left-side continuity because f(2) = 1 and the limit from the left is equal to 1")
            break
        else:
            print("Invalid input")
     print(" - - - - - - - - - - - - - - - - - - - - - - - - - -")
-    print("The answer structure should be as follows: 'Limit answer (Number only)', 'Continuity answer (either Yes or No)'")
+    print("The answer structure should be as follows: 'Limit answer (Number)', 'Continuity answer (either Yes or No)'")
     user_input = input("Are you ready to start the quiz? (y if yes and n if no)")
+    for i in range(1,6):
+        time.sleep(1)
+        print(i)
+
     while user_input != 'n':
         if user_input == 'n':
             break
         elif user_input == 'y':
-            print("Answer the following questions based on the following graph. You only have one try. Write DNE of the limit does not exist and/or the continuity does not exist")
+            print("Answer the following questions based on the following graph. You only have one try. Write DNE if the limit does not exist and/or the continuity does not exist")
             quiz_graph()
             user_answer = input("Q1: What is the limit at x = 1.5 and is there continuity at this point?")
             while user_answer != 432:
-                if user_answer == "1, Yes" or user_answer == "Yes, 1":
+                if user_answer == "1, Yes":
                     print("Correct!")
                     break
                 else:
                     print("Incorrect")
                     break
+            quiz_graph()
             user_answer = input(
                 "Q2: What is the limit at x = 3 and is there continuity at this point?")
             while user_answer != 432:
@@ -110,6 +116,7 @@ def main():
                 else:
                     print("Incorrect")
                     break
+            quiz_graph()
             user_answer = input(
                 "Q3: What is the limit at x = 4 and is there continuity at this point?")
 
@@ -121,6 +128,7 @@ def main():
                 else:
                     print("Incorrect")
                     break
+            quiz_graph()
             user_answer = input(
                 "Q4: What is the limit at x = 5 and is there continuity at this point?")
             while user_answer != 432:
@@ -130,15 +138,20 @@ def main():
                 else:
                     print("Incorrect")
                     break
+            quiz_graph()
+            print("For this question the structure is as follows: 'Limit answer (Number)', 'Continuity answer (either Yes or No), one-side continuity answer (LSC or RSC)' ")
+            print("LSC = LEFT-SIDE CONTINUITY")
+            print("RSC = RIGHT-SIDE CONTINUITY")
             user_answer = input(
-                "Q5: What is the limit at x = 7 and is there continuity at this point?")
+                "Q5: What is the limit at x = 7 and is there continuity at this point? If not, is there a one-side continuity? If there is, what is it?")
             while user_answer != 432:
-                if user_answer == 1:
+                if user_answer == 'DNE, no, LSC':
                     print("Correct!")
                     break
                 else:
                     print("Incorrect")
                     break
+
             break
 
 
