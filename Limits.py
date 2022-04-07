@@ -66,8 +66,7 @@ def main():
             break
         else:
             print("Invalid input")
-        user_input = input(
-            "Do you wish to proceed? (By pressing y, you will be taught the concept of limits and continuity and how to find them. Pressing n will take you to the next step)")
+        user_input = input("Do you wish to proceed? (By pressing y, an explanation for limits and continuity will appear. Pressing n will take you to the next step)")
 
     user_input = input("Do you wish to proceed? (By pressing y you will be shown an example. Pressing n will take you to the next step)")
     while user_input != 'n':
