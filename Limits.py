@@ -171,6 +171,10 @@ def main():
         break
 
     print("These are the questions that you got right:", answers)
+    for i in range(0,3):
+        print("-- -- -- -- -- -- -- -- -- -- -- -- -- --")
+    print("I genuinely hope that you found this program helpful and useful and I hope that your knowledge in terms of limits and continuity is now better!")
+
 
 
 
