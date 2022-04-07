@@ -1,4 +1,26 @@
 import matplotlib.pyplot as plt
+import numpy as np
+
+
+
+def limits_cont_teach():
+    print("Limit is defined as the value a function approaches the output for the given input value.")
+    print("In order to find a limit, you need to check the right side and left side of the input value given.")
+    print("Lim (f(x)) x -> a")
+    print("If the right side is equal to the left side, then the limit does exist and is the value found in both sides")
+    print("lim (f(x)) x -> a^+ = lim (f(x)) x -> a^- ")
+    print("However, If the sides aren't equal to each other, then the limit does not exist.")
+    print("lim (f(x)) x -> a^+ != lim (f(x)) x -> a^- ")
+    print("- - - - - - - - - - - - - - - - - - - - - - - - - - -")
+    print("A function is continuous if the following conditions are met:")
+    print("1- f(x) is defined")
+    print("2- The limit exists")
+    print("3- Limit = f(x)")
+    print("Note that there could be a one-side continuity which means that even if a function is not continuous at a certain point, if either the right side or the left side is equal to f(x)")
+    print("Then it is called a one-side continuity and its named depending on which side is equal to f(x)")
+    print("Right-side continuity if f(x) = Lim(f(x)) x->a^+")
+    print("Left-side continuity if f(x) = Lim(f(x)) x->a^-")
+
 
 def example_graph_1():
     x_axis =[-1,0,1,2,3,4,5,6]
@@ -30,12 +52,14 @@ def quiz_graph():
 def main():
     print("Knowing how to find limits is quite important in calculus as you can find"
           " where a function is going at a certain point even if the function isn't defined at that point!")
-    print("This program will help you understand how to find limits and their continuity by explaining the concept, testing you and providing examples")
-    user_input = input("Do you wish to proceed? (By pressing y, you will be taught the concept of limits and continuity and how to find them. Pressing n will take you to the next step)")
+    print("You can also find out if a function is continuous or not by using limits.")
+    print("-- -- -- -- -- - - - -- -- -- -- --")
+    print("This program will help you understand how to find limits and continuity.")
+    user_input = input("Do you wish to proceed? (By pressing y, an explanation for limits and continuity will appear. Pressing n will take you to the next step)")
 
     while user_input != 'n':
         if user_input == 'y':
-            print("")
+            limits_cont_teach()
             break
         elif user_input =='n':
             break
@@ -52,7 +76,7 @@ def main():
             print("If you take x = 1 from the right (1.0000000001) and from the left (0.9999999999), you will find that")
             print("as x approaches x = 1 from the right, y is equal to 2 and as x approaches x = 1 from the left, y is also equal to 2 ")
             print("Therefore the limit is equal to 2.")
-            print("Since the limit from the right is equal to the limit from the left, there is continuity at this point.")
+            print("Since f(x) is defined, the limit exists and f(x) is equal to the limit, there is continuity at this point.")
             break
         elif user_input =='n':
             break
