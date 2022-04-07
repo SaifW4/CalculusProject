@@ -73,10 +73,12 @@ def main():
         if user_input == 'y':
             print("Q1: Find the limit at x = 1 and determine if there is continuity at that point or not:")
             example_graph_1()
+            print("------------------------------------------------------------")
             print("If you take x = 1 from the right (1.0000000001) and from the left (0.9999999999), you will find that")
             print("as x approaches x = 1 from the right, y is equal to 2 and as x approaches x = 1 from the left, y is also equal to 2 ")
             print("Therefore the limit is equal to 2.")
             print("Since f(x) is defined, the limit exists and f(x) is equal to the limit, there is continuity at this point.")
+            print("------------------------------------------------------------")
             break
         elif user_input =='n':
             break
@@ -90,12 +92,14 @@ def main():
        if user_input == 'y':
            print("Q2: Find the limit at x = 2")
            example_graph_2()
+           print("------------------------------------------------------------")
            print("If you take x = 2 from the right (2.0000000001) and from the left (1.9999999999), you will find that")
            print(
                "as x approaches x = 2 from the right, y is equal to 2 and as x approaches x = 2 from the left, y is equal to 1 ")
            print("Therefore the limit does not exist.")
            print("Since the limit does not exist, there is no continuity at this point.")
            print("Note that even though the function is not continuous at x = 2, it still has a left-side continuity because f(2) = 1 and the limit from the left is equal to 1")
+           print("------------------------------------------------------------")
            break
        elif user_input == 'n':
            break
