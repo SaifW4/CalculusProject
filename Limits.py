@@ -1,8 +1,4 @@
 import matplotlib.pyplot as plt
-import numpy as np
-import time
-
-
 
 def example_graph_1():
     x_axis =[-1,0,1,2,3,4,5,6]
@@ -22,7 +18,6 @@ def example_graph_2():
     plt.plot(x_axis,y_axis, color= "blue")
     plt.show()
 
-
 def quiz_graph():
     x_axis = [1,1,3,3,4,5,6,7]
     y_axis = [0,1,1,3,3,2,0.5,0]
@@ -33,7 +28,6 @@ def quiz_graph():
     plt.show()
 
 def main():
-
     print("Knowing how to find limits is quite important in calculus as you can find"
           " where a function is going at a certain point even if the function isn't defined at that point!")
     print("This program will help you understand how to find limits and their continuity by explaining the concept, testing you and providing examples")
@@ -52,7 +46,6 @@ def main():
 
     user_input = input("Do you wish to proceed? (By pressing y you will be shown an example. Pressing n will take you to the next step)")
     while user_input != 'n':
-
         if user_input == 'y':
             print("Q1: Find the limit at x = 1 and determine if there is continuity at that point or not:")
             example_graph_1()
@@ -67,7 +60,6 @@ def main():
             input("Invalid input")
         user_input = input(
             "Do you wish to proceed? (By pressing y you will be shown an example. Pressing n will take you to the next step)")
-
     print(" - - - - - - - - - - - - - - - - - - - - - - - - - -")
     user_input = input("Do you wish to proceed? (Press y to see another example. Pressing anything else will take you to the next step)")
     while user_input != 'n':
@@ -92,9 +84,6 @@ def main():
     print("Please save the graph figure in order to have it always displayed next to the questions.")
     answers = []
     user_input = input("Are you ready to start the quiz? (y if yes and n if no)")
-
-
-
     while user_input != 'n':
         if user_input == 'n':
             break
@@ -174,16 +163,6 @@ def main():
     for i in range(0,3):
         print("-- -- -- -- -- -- -- -- -- -- -- -- -- --")
     print("I genuinely hope that you found this program helpful and useful and I hope that your knowledge in terms of limits and continuity is now better!")
-
-
-
-
-
-
-
-
-
-
 
 main()
 
