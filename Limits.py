@@ -88,6 +88,7 @@ def main():
     print(" - - - - - - - - - - - - - - - - - - - - - - - - - -")
     print("The answer structure should be as follows: 'Limit answer (Number)', 'Continuity answer (either Yes or No)'")
     print("Please save the graph figure in order to have it always displayed next to the questions.")
+    answers = []
     user_input = input("Are you ready to start the quiz? (y if yes and n if no)")
     for i in range(1,6):
         time.sleep(1)
@@ -99,44 +100,48 @@ def main():
         elif user_input == 'y':
             print("Answer the following questions based on the following graph. You only have one try. Write DNE if the limit does not exist and/or the continuity does not exist")
             quiz_graph()
-            user_answer = input("Q1: What is the limit at x = 1.5 and is there continuity at this point?")
+            user_answer1 = input("Q1: What is the limit at x = 1.5 and is there continuity at this point?")
 
-            while user_answer != 432:
-                if user_answer == "1, Yes":
+            while user_answer1 != 432:
+                if user_answer1 == "1, Yes":
+                    answers.append(user_answer1)
                     print("Correct!")
                     break
                 else:
                     print("Incorrect")
                     break
             quiz_graph()
-            user_answer = input(
+            user_answer2 = input(
                 "Q2: What is the limit at x = 3 and is there continuity at this point?")
 
-            while user_answer != 432:
-                if user_answer == "DNE, DNE":
+            while user_answer2 != 432:
+                if user_answer2 == "DNE, DNE":
+                    answers.append(user_answer2)
                     print("Correct!")
                     break
                 else:
                     print("Incorrect")
                     break
             quiz_graph()
-            user_answer = input(
+            user_answer3 = input(
                 "Q3: What is the limit at x = 4 and is there continuity at this point?")
 
 
-            while user_answer != 432:
-                if user_answer == "3, Yes":
+            while user_answer3 != 432:
+                if user_answer3 == "3, Yes":
+                    answers.append(user_answer3)
                     print("Correct!")
                     break
                 else:
                     print("Incorrect")
                     break
             quiz_graph()
-            user_answer = input(
+            user_answer4 = input(
                 "Q4: What is the limit at x = 5 and is there continuity at this point?")
 
-            while user_answer != 432:
-                if user_answer == 1:
+            while user_answer4 != 432:
+                if user_answer4 == '2, Yes':
+                    answers.append(user_answer4)
                     print("Correct!")
                     break
                 else:
@@ -146,16 +151,25 @@ def main():
             print("For this question the structure is as follows: 'Limit answer (Number)', 'Continuity answer (either Yes or No), one-side continuity answer (LSC or RSC)' ")
             print("LSC = LEFT-SIDE CONTINUITY")
             print("RSC = RIGHT-SIDE CONTINUITY")
-            user_answer = input(
+            user_answer5 = input(
                 "Q5: What is the limit at x = 7 and is there continuity at this point? If not, is there a one-side continuity? If there is, what is it?")
 
-            while user_answer != 432:
-                if user_answer == 'DNE, No, LSC':
+            while user_answer5 != 432:
+                if user_answer5 == 'DNE, No, LSC':
+                    answers.append(user_answer5)
                     print("Correct!")
                     break
                 else:
                     print("Incorrect")
                     break
+
+
+
+
+
+
+
+            print(answers)
 
             break
 
