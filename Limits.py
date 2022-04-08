@@ -133,7 +133,7 @@ def main():
                 "Q2: What is the limit at x = 3 and is there continuity at this point?")
 
             while user_answer2 != 432:
-                if user_answer2 == "DNE, DNE":
+                if user_answer2 == "DNE, No":
                     answers.append("Q2: DNE, DNE")
                     print("Correct!")
                     break
